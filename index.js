@@ -20,12 +20,42 @@ console.log(myInstagramPost);
 Create 2 Instagram post objects from the constructor function you created above
  */
 
-// 1
+// first instagram post
 const jumaiInstagramPost = new InstagramPost ('Jumai_H', 'Chilling with the girls', 'https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books_23-2149334862.jpg?w=2000', 5006, 1005 )
 console.log(jumaiInstagramPost);
-// 2
+
+// second instagram post
 const tobiInstagramPost = new InstagramPost ('Tobiiii', 'I love to design', {}, 1054, 205 )
 console.log(tobiInstagramPost);
+
+
+// Question 3a:
+
+function creatPerson (name, age, location) {
+    return{
+        name: name,
+        age: age,
+        location: location,
+    }
+}
+const musa = creatPerson ('Musa', 19, 'Lekki, Lagos State')
+console.log(musa)
+
+// Question 3b
+
+function jambScore (eng, govt, lit, crk) {
+    return{
+        eng: eng,
+        govt: govt,
+        lit: lit,
+        crk: crk,
+    }
+}
+const musaJmabScore = jambScore (70, 85, 82, 94)
+console.log(musaJmabScore)
+
+console.log("Musa details are" + musa + musaJmabScore )
+
 
 
 // Question 4:  What are the different ways you can clone an object? Give examples for each of them.
