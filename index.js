@@ -28,7 +28,20 @@ const tobiInstagramPost = new InstagramPost ('Tobiiii', 'I love to design', {}, 
 console.log(tobiInstagramPost);
 
 
+// Question 4:  What are the different ways you can clone an object? Give examples for each of them.
 
+ // spread operator
+ const copyMyInstagramPost = {...myInstagramPost, ...jumaiInstagramPost}
+ console.log(copyMyInstagramPost)
+ 
+ // Object Assign
+ const myInstagramPostCopy = Object.assign({}, myInstagramPost)
+ console.log(myInstagramPostCopy)
+ 
+ //JSON.parse and JSON.stringyify()
+ const myData = JSON.parse(JSON.stringify(jumaiInstagramPost, tobiInstagramPost ));
+ console.log(myData)
+ 
 
 // Question 5
 const presidentialCandidates = {
